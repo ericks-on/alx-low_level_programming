@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $CFILE >cfile|sed -i "s/.c/.o/" cfile|gcc -c $CFILE -o <cfile 
+gcc -c $CFILE  
