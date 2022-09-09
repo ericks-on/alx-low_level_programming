@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  * main - prints n if positive or negative
- * 
+ *
  * Description: used if or else statement
  * Return: returns 0
  */
