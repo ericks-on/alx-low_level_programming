@@ -1,8 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
-
 /* main - prints n if positive or negative 
  *
  * Description: used if or else statement
