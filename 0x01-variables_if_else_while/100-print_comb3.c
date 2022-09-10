@@ -8,15 +8,14 @@
 int main(void)
 {
 	int n;
+	int next;
 
 	for (n = '0'; n < '9'; n++)
 	{
 		putchar(n);
-		for (n = n + 1; n + 1 <= '9'; n++)
+		for (next = n + 1; next <= '9'; n++)
 		{
-			putchar(n);
-			if (n == 9)
-				continue;
+			putchar(next);
 			putchar(',');
 			putchar(' ');
 		}
