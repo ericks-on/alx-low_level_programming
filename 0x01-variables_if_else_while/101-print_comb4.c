@@ -2,8 +2,8 @@
 /**
  * main - prints all possible combos of three digits
  *
- * Description:
- * Return
+ * Description: uses for loop and putchar functions
+ * Return: returns 0
  */
 int main(void)
 {
