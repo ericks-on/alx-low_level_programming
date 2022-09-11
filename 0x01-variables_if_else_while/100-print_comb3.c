@@ -10,9 +10,9 @@ int main(void)
 	int n;
 	int next;
 
-	next = n + 1;
 	for (n = '0'; n < '9'; n++)
 	{
+		next = n + 1;
 		while (n < '9')
 		{
 			putchar(n);
