@@ -8,16 +8,19 @@
 int main(void)
 {
 	int n;
-	int next;
+	int next = n + 1;
 
 	for (n = '0'; n < '9'; n++)
 	{
-		putchar(n);
-		for (next = n + 1; next <= '9'; n++)
+		while (n < '9')
 		{
+			putchar(n)
 			putchar(next);
+			next++;
 			putchar(',');
 			putchar(' ');
+			if (next == '9')
+				break;
 		}
 	}
 	putchar('\n');
