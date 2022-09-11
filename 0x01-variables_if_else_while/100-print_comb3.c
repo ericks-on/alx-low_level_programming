@@ -12,14 +12,12 @@ int main(void)
 
 	for (n = '0'; n < '9'; n++)
 	{
-		next = n + 1;
-		while (next <= '9')
+		for (next = '1'; next <= '9'; next++)
 		{
 			putchar((n % 10) + '0');
 			putchar((next % 10) + '0');
 			putchar(',');
 			putchar(' ');
-			next++;
 		}
 	}
 	putchar('\n');
