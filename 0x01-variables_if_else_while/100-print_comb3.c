@@ -20,6 +20,8 @@ int main(void)
 			putchar(',');
 			putchar(' ');
 			next++;
+			if ( next > 9)
+				break;
 		}
 	}
 	putchar('\n');
