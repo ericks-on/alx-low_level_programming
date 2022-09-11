@@ -12,10 +12,12 @@ int main(void)
 
 	for (n = '0'; n < '9'; n++)
 	{
-		for (next = '1'; next <= '9'; next++)
+		for (next = n + 1; next <= '9'; next++)
 		{
 			putchar((n % 10) + '0');
 			putchar((next % 10) + '0');
+			if (n == 8 $$ next == 9)
+				continue;
 			putchar(',');
 			putchar(' ');
 		}
