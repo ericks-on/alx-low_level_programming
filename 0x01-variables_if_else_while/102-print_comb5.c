@@ -21,11 +21,11 @@ int main(void)
 			{
 				for (forth = 0; forth <= 9; forth++)
 				{
-					putchar((first % 10) +'0');
-					putchar((second % 10) +'0');
+					putchar((first % 10) + '0');
+					putchar((second % 10) + '0');
 					putchar(' ');
 					putchar((third % 10) + '0');
-					putchar((forth % 10) +'0');
+					putchar((forth % 10) + '0');
 					if (first == 9 && second == 9 &&
 							third == 9 &&
 							forth == 9)
@@ -34,7 +34,7 @@ int main(void)
 					putchar(' ');
 				}
 			}
-		}		
+		}
 	}
 	putchar('\n');
 	return (0);
