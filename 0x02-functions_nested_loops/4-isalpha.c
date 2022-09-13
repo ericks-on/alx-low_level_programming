@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * _isalpha - checks if an arguement is alphanumerical
- * c: only argument , it is the character to be checked
+ * @c: only argument , it is the character to be checked
  *
  * Return: returns 1 if either lower or uppercase and 0 if neither
  */
