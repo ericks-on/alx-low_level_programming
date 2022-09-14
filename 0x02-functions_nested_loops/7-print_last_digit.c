@@ -8,8 +8,16 @@
  */
 int print_last_digit(int x)
 {
-	int y = _abs(x);
+	int x_positive = x * (-1);
 
-	_putchar((y % 10) + '0');
-	return (y % 10);
+	if (x > 0)
+	{
+		_putchar((x % 10) + '0');
+		return (x % 10);
+	}
+	else
+	{
+		_putchar((x_positive % 10) + '0');
+		return (x_positive % 10);
+	}
 }
