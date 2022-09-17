@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * main - t
+ *
  * Return: returns 0
  */
 
