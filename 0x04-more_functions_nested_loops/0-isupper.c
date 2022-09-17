@@ -1,5 +1,5 @@
-nclude"main.h"
-
+#include"main.h"
+#include <stdio.h>
 /**
  * _isupper - checks for uppercase 
  * @c: the characterr to be checked
