@@ -8,12 +8,14 @@
  */
 int _atoi(char *s)
 {
-	for (s != '\0')
+	while (s != '\0')
 	{
 		
 		if (s == '-')
 			_putchar(s);
 		else
 			_putchar(s - '0');
+		s++;
 	}
+	_putchar('\n');
 }
