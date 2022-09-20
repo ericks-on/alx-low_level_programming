@@ -11,7 +11,7 @@ int _atoi(char *s)
 	while (*s != '\0')
 	{
 		
-		if (s == '-')
+		if (*s == '-')
 			_putchar(*s);
 		else
 			_putchar(*s - '0');
