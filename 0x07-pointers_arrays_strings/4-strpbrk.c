@@ -15,17 +15,11 @@ char *_strpbrk(char *s, char *accept)
 		while (*accept != '\0')
 		{
 			if (*s == *accept)
-				break;
+				return (s);
 			else
 				accept++;
 		}
-		if (*s == *accept)
-			break;
-		else
-			s++;
+		s++;
 	}
-	if (*s == *accept)
-		return (s);
-	else
-		return (NULL);
+	return (NULL);
 }
