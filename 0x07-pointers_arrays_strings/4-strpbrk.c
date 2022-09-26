@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * _strpbrk - locates first occurence in the string s of any of the bytes in s
  * @s: the string to search
@@ -9,8 +10,6 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-	int j = 0;
-
 	while (*s != '\0')
 	{
 		while (*accept != '\0')
@@ -25,5 +24,8 @@ char *_strpbrk(char *s, char *accept)
 		else
 			s++;
 	}
-	return (s)
+	if (*s == *accept)
+		return (s);
+	else
+		return (NULL);
 }
