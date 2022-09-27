@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * _strstr - finds first occurence of substring
  * @haystack: the string to be searched
