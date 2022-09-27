@@ -4,6 +4,8 @@
  * _strspn - gets string of a prefix substring
  * @s: the string to search
  * @accept: the reference
+ *
+ * Return: number of bytes in initial segment
  */
 unsigned int _strspn(char *s, char *accept)
 {
