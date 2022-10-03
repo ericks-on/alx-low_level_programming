@@ -7,7 +7,7 @@
  *
  * Return:void
  */
-void whatsmyname(int argc, char **argv)
+void main(int argc, char **argv)
 {
 	printf("%s", argv[0]);
 }
