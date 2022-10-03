@@ -1,3 +1,2 @@
 Arguments to the main
-argc
-argv
+argc & argv
