@@ -18,12 +18,10 @@ char *create_array(unsigned int size, char c)
 	a[0] = c;
 	if (a[0] == c)
 	{
-		free(a);
 		return (a);
 	}
 	else
 	{
-		free(a);
 		return (NULL);
 	}
 }
