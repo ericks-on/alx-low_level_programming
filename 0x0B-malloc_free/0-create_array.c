@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stddef.h>
+#include <stdlib.h>
 /**
  * create_array - creates an array of chars
  * @size: size of array
@@ -16,7 +17,13 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 	a[0] = c;
 	if (a[0] == c)
+	{
+		free(a);
 		return (a);
+	}
 	else
+	{
+		free(a);
 		return (NULL);
+	}
 }
