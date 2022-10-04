@@ -14,22 +14,12 @@ char *create_array(unsigned int size, char c)
 	char *a;
 	unsigned int i;
 
-	while (1)
-	{
-		a = malloc(INT_MAX);
-		a[0] = c;
-	}
-	a = malloc(sizeof(char) * 98);
 	if (size == 0)
 		return (NULL);
+	a = malloc(sizeof(char) * size);
+	if (a == NULL)
+		return(NULL);
 	for (i = 0; i < size; i++)
 		a[i] = c;
-	if (a[0] == c)
-	{
-		return (a);
-	}
-	else
-	{
-		return (NULL);
-	}
+	return (a);
 }
