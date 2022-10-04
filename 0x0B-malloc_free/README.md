@@ -1,0 +1,2 @@
+dynamic memory allocation 
+malloc
