@@ -4,7 +4,7 @@
  * _strdup - returns pointer to newly allocated space
  * @str: the string
  *
- * Return: pointer to newly allocated space or null 
+ * Return: pointer to newly allocated space or null
  */
 char *_strdup(char *str)
 {
@@ -16,7 +16,7 @@ char *_strdup(char *str)
 		return (NULL);
 	while (str[i] != '\0')
 		i++;
-	cstr = malloc(sizeof(char) * i);
+	cstr = malloc(sizeof(char) * (i - 1));
 	if (cstr == NULL)
 		return (NULL);
 	while (j < i)
