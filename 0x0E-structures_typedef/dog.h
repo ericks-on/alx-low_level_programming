@@ -3,6 +3,8 @@
  * @name: first member
  * @age: second feature
  * @owner: third feature
+ *
+ * Description: contains dogs details
  */
 struct dog
 {
