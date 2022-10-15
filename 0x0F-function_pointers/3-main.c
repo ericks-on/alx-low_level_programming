@@ -19,11 +19,13 @@ int main(int argc, char **argv)
 		s = argv[2];
 		a = atoi(argv[1]);
 		b = atoi(argv[3]);
-		if (get_op_func(s) != 100)
+		if (get_op_func(s))
 		{
 			fxn = get_op_func(s);
 			fxn(a, b);
 		}
 
 	}
+	printf("Error\n");
+	exit (98);
 }

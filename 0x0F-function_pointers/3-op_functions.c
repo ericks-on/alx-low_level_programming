@@ -12,12 +12,9 @@ int op_add(int a, int b)
 {
 	int result;
 
-	if (a && b)
-	{
-		result = a + b;
-		printf("%d\n", result);
-		exit(0);
-	}
+	result = a + b;
+	printf("%d\n", result);
+	exit(0);
 }
 /**
  * op_sub - subtracts two numbers
@@ -30,12 +27,9 @@ int op_sub(int a, int b)
 {
 	int result;
 
-	if (a && b)
-	{
-		result = a - b;
-		printf("%d\n", result);
-		exit(0);
-	}
+	result = a - b;
+	printf("%d\n", result);
+	exit(0);
 }
 /**
  * op_mul - multiplies two numbers
@@ -48,12 +42,9 @@ int op_mul(int a, int b)
 {
 	int result;
 
-	if (a && b)
-	{
-		result = a * b;
-		printf("%d\n", result);
-		exit(0);
-	}
+	result = a * b;
+	printf("%d\n", result);
+	exit(0);
 }
 /**
  * op_div - divides two numbers
@@ -66,17 +57,14 @@ int op_div(int a, int b)
 {
 	int result;
 
-	if (a && b)
-	{
-		result = a / b;
-		printf("%d\n", result);
-		exit(0);
-	}
 	if (b == 0)
 	{
 		printf("Error\n");
 		exit(100);
 	}
+	result = a / b;
+	printf("%d\n", result);
+	exit(0);
 }
 /**
  * op_mod - returns the remainder
@@ -89,15 +77,12 @@ int op_mod(int a, int b)
 {
 	int result;
 
-	if (a && b)
-	{
-		result = a % b;
-		printf("%d\n", result);
-		exit(0);
-	}
 	if (b == 0)
 	{
 		printf("Error\n");
 		exit(100);
 	}
+	result  = a % b;
+	printf("%d\n", result);
+	exit(0);
 }
