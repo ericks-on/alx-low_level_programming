@@ -2,6 +2,25 @@
 #include <stddef.h>
 #include <stdio.h>
 /**
+ * get_len - gets length of a string stored in node of list_t
+ * ptr: pointer node in linked list
+ *
+ * Return: the length of string
+ */
+size_t get_len(list_t *ptr)
+{
+	size_t len = 0;
+	char *s;
+
+	if ((ptr -> str) != NULL)
+	{
+		s = ptr -> str;
+		while (s[len] != '\0')
+			len++;
+	}
+	return (len);
+}
+/**
  * print_list - prints all elements of a list_t list
  * h: pointer to a list_t list
  *
@@ -25,7 +44,7 @@ size_t print_list(const list_t *h)
 	{
 		size++;
 		s = temp_ptr -> str;
-		l = temp_ptr -> len;
+		l = get_len(temp_ptr);
 		if ((s) == NULL)
 		{
 			printf("[0] (nil)");
