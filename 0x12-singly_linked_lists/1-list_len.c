@@ -10,12 +10,15 @@ size_t list_len(const list_t *h)
 {
 	unsigned int n = 1;
 	list_t *temp_ptr;
-	
-	temp_ptr = h -> next;
-	while (temp_ptr != NULL)
+
+	if (h)
 	{
-		n++;
-		temp_ptr = temp_ptr -> next;
+		temp_ptr = h -> next;
+		while (temp_ptr != NULL)
+		{
+			n++;
+			temp_ptr = temp_ptr -> next;
+		}
 	}
 	return (n);
 }
