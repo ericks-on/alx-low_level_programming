@@ -3,6 +3,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <sys/types.h>
+#include <stdlib.h>
 /**
  * read_textfile - reads text file and prints it to std output
  * @filename: name of file
@@ -14,8 +15,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
 	ssize_t rb, wb;
-	char buff[1000]; 
+	char *buff;
 
+	buff = malloc(sizeof(char) * letters);
+	if (buff == NULL)
+		return (0);
 	if (filename == NULL)
 		return (0);
 	fd = open(filename, O_RDWR);
